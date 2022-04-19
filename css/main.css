@@ -1,4 +1,9 @@
 /* START Global Styles and Classess*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /*Global Colours*/
 :root {
   --green: #01ba98;
@@ -10,8 +15,6 @@
 }
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 ul li {
   list-style-type: none;
@@ -74,7 +77,9 @@ section {
 .flex-align-end {
   align-items: flex-end;
 }
-
+.fw {
+  width: 100%;
+}
 /*Headings*/
 .h-lg {
   min-height: 70px;
@@ -344,4 +349,54 @@ section {
   position: absolute;
   right: 8px;
   bottom: 8px;
+}
+
+/**
+*   Stage 2 CSS. For React project
+*/
+#footer {
+  margin-top: 90px;
+}
+.footer-heading {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+.footer-menu {
+  gap: 10px;
+}
+.footer-menu .menu-item a {
+  text-transform: capitalize;
+  color: var(--grey);
+}
+.footer-bottom-bar {
+  background-color: var(--pink);
+  height: 85px;
+  margin-top: 65px;
+}
+.footer-bar-inner {
+  width: 80%;
+}
+.privacy-links {
+  gap: 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: white;
+}
+.privacy-links a:hover {
+  color: var(--green);
+}
+.social-icons {
+  gap: 40px;
+  color: white;
+  font-size: 20px;
+}
+.social-icons i:hover {
+  color: var(--green);
+  cursor: pointer;
 }
