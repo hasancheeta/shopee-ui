@@ -77,6 +77,7 @@ section {
 .flex-align-end {
   align-items: flex-end;
 }
+
 .fw {
   width: 100%;
 }
@@ -96,6 +97,10 @@ section {
 .h-pink {
   color: var(--pink);
   border-color: var(--pink);
+}
+.h-orange {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
 /*END Global Styles and Classes*/
@@ -341,7 +346,7 @@ section {
   height: 55px;
   border: inherit;
   background-color: white;
-  color: var(--pink);
+  color: inherit;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -399,4 +404,37 @@ section {
 .social-icons i:hover {
   color: var(--green);
   cursor: pointer;
+}
+
+/*Stage 3 styling*/
+.grid {
+  display: grid;
+}
+.grid-item {
+  width: 250px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url("/shopee-ui/images/pen-product.png");
+  position: relative;
+  padding: 20px;
+}
+.background-overlay {
+  background-image: linear-gradient(359.68deg, #9a999933 0%, #c4c4c400 55%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-title {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 800;
+}
+.dual-green {
+  border-color: var(--green);
+  color: var(--green);
 }
